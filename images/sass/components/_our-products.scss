@@ -1,0 +1,23 @@
+.our-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.our-products .item {
+  max-width: 370px;
+  width: 100%;
+  border-right-color: tomato;
+  outline: red;
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.products-img {
+  display: block;
+}
+
+.products-position {
+  position: relative;
+}

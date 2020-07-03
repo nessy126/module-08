@@ -1,0 +1,14 @@
+.form-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.border-input {
+  padding: 12px 18px;
+  min-width: 358px;
+  min-height: 50px;
+  border: 1px solid $border-input-email;
+  box-shadow: 0 4px 4px $border-input-email-shaddow;
+  border-radius: 4px;
+  background-color: $footer-bg-color;
+}

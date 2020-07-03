@@ -1,0 +1,22 @@
+.hero {
+  text-align: center;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid green; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      $background-grey,
+      $background-grey
+    ),
+    url('../images/hero-img-s.jpg');
+}

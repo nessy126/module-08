@@ -1,0 +1,136 @@
+.form-field {
+  position: relative;
+  margin-bottom: 28px;
+
+  &:nth-child(4) {
+  margin-bottom: 20px;
+  }
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.1429;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+  transition: transform 25ms linear;
+}
+
+.form-input {
+  padding: 12px 18px 12px 42px;
+  width: 100%;
+  height: 40px;
+  font: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.1429;
+  letter-spacing: 0.01em;
+
+  &:focus + .form-label,
+  &:not(:placeholder-shown) + .form-label {
+    transform: translate(-30px, -40px);
+    color: $accent-color;
+    font-size: 12px;
+    line-height: 1.16666;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:focus ~ .form-icon,
+  &:not(:placeholder-shown) ~ .form-icon {
+    fill: $accent-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:focus {
+    border: 1px solid #2196F3;
+border-radius: 4px;
+  }
+}
+
+/* Иконки */
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  fill: $title-text-color;
+}
+
+.form-textarea {
+  padding: 12px 18px;
+  width: 448px;
+  height: 120px;
+  // margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.1429;
+  letter-spacing: 0.01em;
+}
+
+/* Чекбокс */
+
+.check {
+  position: relative;
+  /* margin-bottom: 30px;   */
+  border-radius: 4px;
+  margin-right: auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding-left: 42px;
+  color: $primary-text-color;
+}
+
+.check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  &:checked + .check-box {
+    background-color: $accent-color;
+    background-image: url(../images/form/check.svg);
+    border: 2px solid $accent-color;
+    border-radius: 2px;
+  }
+
+  &:focus + .check-box {
+    border: 2px solid $accent-color;
+    border-radius: 2px;
+  }
+
+  &:checked:focus + .check-box {
+    background-color: $accent-color;
+    background-image: url(../images/form/check.svg);
+    border: 2px solid $accent-color;
+    border-radius: 2px;
+  }
+}
+
+.check-box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  left: 17.5px;
+  top: 1px;
+}
+
+.check-link {
+  color: $accent-color;
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -7,6 +7,7 @@ body {
   letter-spacing: 0.03em;
   margin: 0;
   z-index: 2;
+  outline-color: 1px solid #2196f3;
 }
 
 .list {
@@ -271,18 +272,21 @@ footer {
     display: block;
     width: 24px;
     height: 16px;
+    vertical-align: bottom;
+    text-align: right;
     margin-left: auto;
     margin-top: 22px;
     margin-bottom: 22px;
     margin-right: 23px;
-    padding: 0;
     border: 1px solid transparent;
     background-color: #ffffff;
   }
   .burger-icon {
     fill: black;
   }
-  .burger-icon:hover, .burger-icon:focus {
+  :hover,
+  :focus {
+    cursor: pointer;
     fill: #2196f3;
   }
 }
@@ -334,6 +338,12 @@ footer {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
     bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .burger {
+    display: none;
   }
 }
 
@@ -912,8 +922,8 @@ ul .feature.list {
   height: auto;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -924,8 +934,6 @@ ul .feature.list {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;

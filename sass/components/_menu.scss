@@ -19,23 +19,26 @@
       // outline: none !important;
       width: 24px;
       height: 16px;
+      vertical-align: bottom;
+      text-align: right;
+      // padding: 22px 23px;
       margin-left: auto;
       margin-top: 22px;
       margin-bottom: 22px;
       margin-right: 23px;
-      padding: 0;
+
       border: 1px solid transparent;
       background-color: $secondary-text-color;
-
-
   }  
+
   .burger-icon {
     fill: $burger-color ;
+  }
       &:hover,
       &:focus {
+        cursor: pointer;
         fill:$accent-color;
       }
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -93,6 +96,8 @@
 
 // }
 
-// @media screen and (min-width: 1200px)  {
-
-// }
+@media screen and (min-width: 1200px)  {
+  .burger {
+    display: none;
+  }
+}

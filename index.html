@@ -35,9 +35,9 @@
             <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contacts list">
-          <li class="menu-item">
-            <a href="mailto:info@devstudio.com" class="contact">
+        <ul class="list contact-list ">
+          <li class="contact-item">
+            <a href="mailto:info@devstudio.com" class="contact-link">
               <svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M14.5 0H1.50001C0.672854 0 0 0.628107 0 1.40026V9.80173C0 10.5739 0.672854 11.202 1.50001 11.202H14.5C15.3271 11.202 16 10.5739 16 9.80173V1.40026C16 0.628107 15.3271 0 14.5 0ZM14.5 0.933493C14.5679 0.933493 14.6325 0.94665 14.6916 0.969628L8 6.38361L1.30833 0.969628C1.36742 0.946681 1.43204 0.933493 1.49998 0.933493H14.5ZM14.5 10.2685H1.50001C1.22414 10.2685 0.999996 10.0593 0.999996 9.80169V1.95587L7.67236 7.35402C7.76661 7.43013 7.8833 7.46798 8 7.46798C8.1167 7.46798 8.23339 7.43016 8.32764 7.35402L15 1.95587V9.80173C15 10.0593 14.7759 10.2685 14.5 10.2685Z"/>
@@ -45,8 +45,8 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="menu-item">
-            <a href="tel:+380961111111" class="contact">
+          <li class="contact-item">
+            <a href="tel:+380961111111" class="contact-link">
                 <svg width="10" height="15" viewBox="0 0 10 15" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8.5 0H1.5C0.672848 0 0 0.628103 0 1.40025V13.5357C0 14.3079 0.672848 14.936 1.5 14.936H8.5C9.32715 14.936 10 14.3079 10 13.5357V1.40025C10 0.628103 9.32715 0 8.5 0ZM1.5 0.933498H8.5C8.77588 0.933498 9 1.14271 9 1.40025V11.202H1V1.40025C1 1.14271 1.22412 0.933498 1.5 0.933498ZM8.5 14.0025H1.5C1.22412 14.0025 1 13.7933 1 13.5357V12.1355H9V13.5357C9 13.7933 8.77588 14.0025 8.5 14.0025Z"/>
@@ -72,29 +72,29 @@
         <div class="container">
           <h2 class="section-title visually-hidden">Наши преимущества</h2>
           <ul class="feature list feature-list">
-            <li class="item icon-antenna-1">
-              <h3 class="title feature">Внимание к деталям</h3>
+            <li class="feature-item icon-antenna-1">
+              <h3 class="title-feature">Внимание к деталям</h3>
               <p class="feature-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item icon-clock-1">
-              <h3 class="title feature">Пунктуальность</h3>
+            <li class="feature-item icon-clock-1">
+              <h3 class="title-feature">Пунктуальность</h3>
               <p class="feature-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item icon-diagram-1">
-              <h3 class="title feature">Планирование</h3>
+            <li class="feature-item icon-diagram-1">
+              <h3 class="title-feature">Планирование</h3>
               <p class="feature-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item icon-astronaut-1">
-              <h3 class="title feature">Современные технологии</h3>
+            <li class="feature-item icon-astronaut-1">
+              <h3 class="title-feature">Современные технологии</h3>
               <p class="feature-text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -104,9 +104,9 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="section">
+      <section class="section section-products">
         <div class="container">
-          <h2 class="section-title title-reset">Чем мы занимаемся</h2>
+          <h2 class="title-section title-reset">Чем мы занимаемся</h2>
           <ul class="our-products list">
             <li class="item">
               <div class="products-position">
@@ -143,7 +143,7 @@
       <!--Наша команда-->
       <section class="team section">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="title-section">Наша команда</h2>
           <ul class="team-list list">
             <li class="member">
               <img src="./images/team1.jpg" alt="" width="270" />
@@ -318,7 +318,7 @@
       <!--Постоянные клиенты-->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="title-section">Постоянные клиенты</h2>
           <ul class="list logo-list">
             <li class="logo-item">
               <a href="#" class="logo-link">
@@ -451,8 +451,7 @@
           </form>
         </div>
       </div>
-      <p class="developed title-reset">2020 | Developed by GoIT Students</p>
-    </footer>
+      </footer>
     <div class="backdrop is-hidden-temp" data-backdrop>
       <div class="modal">
         <button class="close" data-close-modal>

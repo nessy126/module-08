@@ -7,43 +7,7 @@
   }
 }
 
-
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .site-nav {
-    display: none;
-  }
-
-    .burger {
-      display: block;
-      // outline: none !important;
-      width: 24px;
-      height: 16px;
-      vertical-align: bottom;
-      text-align: right;
-      // padding: 22px 23px;
-      margin-left: auto;
-      margin-top: 22px;
-      margin-bottom: 22px;
-      margin-right: 23px;
-
-      border: 1px solid transparent;
-      background-color: $secondary-text-color;
-  }  
-
-  .burger-icon {
-    fill: $burger-color ;
-  }
-      &:hover,
-      &:focus {
-        cursor: pointer;
-        fill:$accent-color;
-        color: $accent-color;
-      }
-}
-
-@media screen and (min-width: 768px) {
-  .humburger {
+  .burger {
     display: none;
   }
 
@@ -92,10 +56,51 @@
     transform: translateX(-100%);
     bottom: 0;
   }
-}
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-// }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+
+    .burger {
+      display: block;
+      // outline: none !important;
+      width: 24px;
+      height: 16px;
+      vertical-align: bottom;
+      text-align: right;
+      // padding: 22px 23px;
+      margin-left: auto;
+      margin-top: 22px;
+      margin-bottom: 22px;
+      margin-right: 23px;
+
+      border: 1px solid transparent;
+      background-color: $secondary-text-color;
+  }  
+
+  .burger-icon {
+    fill: $burger-color ;
+  }
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        fill:$accent-color;
+        color: $accent-color;
+        outline: 1px solid $accent-color;
+      }
+}
+
+@media screen and (min-width: 768px) {
+  .humburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .burger {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 1200px)  {
   .burger {

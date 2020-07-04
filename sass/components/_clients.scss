@@ -22,9 +22,14 @@
   }
 }
 
+.logo-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .logo-svg {
   display: block;
   align-items: center;
   fill: currentColor;
   margin: auto;
 }
+

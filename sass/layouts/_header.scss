@@ -3,7 +3,7 @@ header {
 }
 
 .page-header {
-border-bottom: 1px solid $top-line;
+  border-bottom: 1px solid $top-line;
   }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -18,14 +18,14 @@ border-bottom: 1px solid $top-line;
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
     .page-header {
-    position: fixed;
-    height: 80px;
-    width: 100%;
-    background-color: $primary-bg-color;
-    top: 0;
-    left: 0;
-    z-index: 1;
+      position: fixed;
+      height: 80px;
+      width: 100%;
+      background-color: $primary-bg-color;
+      top: 0;
+      left: 0;
+      z-index: 1;
   }
 }

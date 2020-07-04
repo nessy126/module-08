@@ -21,3 +21,9 @@
 .products-position {
   position: relative;
 }
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .section-products {
+    display: none;
+  }
+} 

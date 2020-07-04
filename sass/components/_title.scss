@@ -3,18 +3,6 @@
   text-transform: uppercase;
 }
 
-.section-title {
-  margin: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
-.section-text {
-  line-height: 1.71;
-}
-
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -25,6 +13,25 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.title.feature {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.71;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 .title-products {

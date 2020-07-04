@@ -3,17 +3,21 @@ header {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  
+  .page-header {
+    min-height: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
+  .page-header {
+    min-height: 80px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1199px) {
-  .page-header {
+    .page-header {
     position: fixed;
-    min-height: 80px;
+    height: 80px;
     width: 100%;
     background-color: $primary-bg-color;
     top: 0;

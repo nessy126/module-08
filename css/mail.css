@@ -24,7 +24,6 @@ a {
   text-decoration: none;
 }
 
-/* Title */
 h1,
 h2,
 h3,
@@ -72,10 +71,22 @@ header {
   margin: 0;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .page-header {
+    min-height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header {
+    min-height: 80px;
+  }
+}
+
 @media screen and (min-width: 1200px) and (max-width: 1199px) {
   .page-header {
     position: fixed;
-    min-height: 80px;
+    height: 80px;
     width: 100%;
     background-color: #ffffff;
     top: 0;
@@ -152,7 +163,7 @@ footer {
   text-align: center;
 }
 
-.main-nav .logo {
+.logo {
   display: block;
 }
 
@@ -191,6 +202,7 @@ footer {
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .logo-header {
@@ -215,6 +227,27 @@ footer {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .logo-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,9 +267,30 @@ footer {
   .site-nav {
     display: none;
   }
+  .burger {
+    display: block;
+    width: 24px;
+    height: 16px;
+    margin-left: auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-right: 23px;
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: #ffffff;
+  }
+  .burger-icon {
+    fill: black;
+  }
+  .burger-icon:hover, .burger-icon:focus {
+    fill: #2196f3;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .humburger {
+    display: none;
+  }
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -374,18 +428,6 @@ footer {
   text-transform: uppercase;
 }
 
-.section-title {
-  margin: 0;
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
-.section-text {
-  line-height: 1.71;
-}
-
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -396,6 +438,25 @@ footer {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.title.feature {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.71;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 .title-products {
@@ -568,16 +629,6 @@ footer {
 
 .feature-img {
   margin-bottom: 30px;
-}
-
-.title.feature {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.section-text.feature {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 ul .feature.list {

@@ -1,4 +1,6 @@
-.main-nav .logo {
+
+
+.logo {
   display: block;
 }
 
@@ -34,6 +36,7 @@
   font-family: raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 .logo-header {
@@ -56,4 +59,29 @@
 .logo-footer {
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+ .logo {
+   font-size: 24px;
+  line-height: 1.17;
+ }
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .logo-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-header {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  }
+
+
 }

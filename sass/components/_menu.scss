@@ -13,10 +13,37 @@
   .site-nav {
     display: none;
   }
+
+    .burger {
+      display: block;
+      // outline: none !important;
+      width: 24px;
+      height: 16px;
+      margin-left: auto;
+      margin-top: 22px;
+      margin-bottom: 22px;
+      margin-right: 23px;
+      padding: 0;
+      border: 1px solid transparent;
+      background-color: $secondary-text-color;
+
+
+  }  
+  .burger-icon {
+    fill: $burger-color ;
+      &:hover,
+      &:focus {
+        fill:$accent-color;
+      }
+  }
 }
 
 @media screen and (min-width: 768px) {
-.site-nav {
+  .humburger {
+    display: none;
+  }
+
+  .site-nav {
   display: flex;
   margin-left: 85px;
 

@@ -2,6 +2,10 @@ header {
   margin: 0;
 }
 
+.page-header {
+border-bottom: 1px solid $top-line;
+  }
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .page-header {
     min-height: 60px;

@@ -1,25 +1,25 @@
-.submenu {
-  display: flex;
-  flex-direction: column;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
+// .submenu {
+//   display: flex;
+//   flex-direction: column;
+//   display: none;
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+// }
 
-.submenu-link {
-  display: block;
-  margin-bottom: 4px;
-  color: $title-text-color;
-  padding: 4px;
-  border: 1px solid $primary-text-color;
-  background-color: $primary-bg-color;
-}
+// .submenu-link {
+//   display: block;
+//   margin-bottom: 4px;
+//   color: $title-text-color;
+//   padding: 4px;
+//   border: 1px solid $primary-text-color;
+//   background-color: $primary-bg-color;
+// }
 
-.menu-item:hover .submenu {
-  display: block;
-}
+// .menu-item:hover .submenu {
+//   display: block;
+// }
 
-.submenu-link:hover .menu .menu-link > .item {
-  background-color: aqua;
-}
+// .submenu-link:hover .menu .menu-link > .item {
+//   background-color: aqua;
+// }

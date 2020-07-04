@@ -72,6 +72,10 @@ header {
   margin: 0;
 }
 
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .page-header {
     min-height: 60px;
@@ -288,6 +292,7 @@ footer {
   :focus {
     cursor: pointer;
     fill: #2196f3;
+    color: #2196f3;
   }
 }
 

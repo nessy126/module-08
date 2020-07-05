@@ -5,6 +5,7 @@
   font-size: 26px;
   line-height: 1.2;
   white-space: nowrap;
+  text-align: center;
 }
 
 .logo-span {
@@ -24,6 +25,7 @@
  .logo {
     font-size: 24px;
     line-height: 1.17;
+    text-align: center;
  }
 }
 
@@ -40,6 +42,10 @@
   padding-top: 26px;
   padding-bottom: 26px;
   }
+}
 
-
+@media screen and (min-width: 1200px) {
+  .logo {
+    text-align: left;
+  }
 }

@@ -16,6 +16,10 @@
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+  }
 }
 
 .social-item:not(:last-child) {

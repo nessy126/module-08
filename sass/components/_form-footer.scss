@@ -1,14 +1,28 @@
 .form-footer {
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.border-input {
+.footer-input {
   padding: 12px 18px;
-  min-width: 358px;
+  max-width: 450px;
   min-height: 50px;
   border: 1px solid $border-input-email;
   box-shadow: 0 4px 4px $border-input-email-shaddow;
   border-radius: 4px;
   background-color: $footer-bg-color;
+  display: block;
+  text-align: center;
+ @media screen and (min-width: 468px) and (max-width: 1199px) {
+   width: 450px;
+ }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+}
+
+.footer-input::placeholder {
+  text-align: left;
 }

@@ -1,6 +1,7 @@
 .our-products {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .our-products .item {
   max-width: 370px;
